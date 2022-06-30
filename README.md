@@ -1,7 +1,7 @@
 ### App for 'data-engineering-take-home'
 #### Before run this app you should create: 
--- AWS SQS Queue
--- send message in the following JSON compatible format:
+- AWS SQS Queue
+- send message in the following JSON compatible format:
 [
   {
     "user_id": "value1",
@@ -12,8 +12,8 @@
     "device_id": "value6"
   }
 ]
--- create Postgres database
--- create table in the database according this defenition: 
+- create Postgres database
+- create table in the database according this defenition: 
 
 CREATE TABLE IF NOT EXISTS user_logins(
     user_id             varchar(128),
@@ -26,11 +26,11 @@ CREATE TABLE IF NOT EXISTS user_logins(
 );
 
 #### To run the app execute the following commands: 
--- pip install -r requirements.txt
--- set up app parameters in params.yaml
--- sh run_app.sh 
+- pip install -r requirements.txt
+- set up app parameters in params.yaml
+- sh run_app.sh 
 
 #### To improve this app I would suggest:
--- instead of sending message with the data to SQS Queue, put JSON file to S3 bucket and send S3 path to the queue
--- store username and password in the Secret Manager
--- customize function processing message_processing for different JSON payload
+- instead of sending message with the data to SQS Queue, put JSON file to S3 bucket and send S3 path to the queue
+- store username and password in the Secret Manager
+- customize function processing message_processing for different JSON payload
