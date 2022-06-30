@@ -34,3 +34,4 @@ CREATE TABLE IF NOT EXISTS user_logins(\
 - instead of sending message with the data to SQS Queue, put JSON file to S3 bucket and send S3 path to the queue
 - store username and password in the Secret Manager
 - customize function processing message_processing for different JSON payload
+- needed to change app_version column type in the user_logins to varchar, since the input data from the queue is comming as a string 
