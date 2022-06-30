@@ -1,8 +1,8 @@
 ### App for 'data-engineering-take-home'
 #### Before run this app you should create: 
 - AWS SQS Queue
-- send message in the following JSON compatible format:
-'''[\
+- send message in the following JSON compatible format:\
+[\
   {\
     "user_id": "value1",\
     "app_version": "value2",\
@@ -11,7 +11,7 @@
     "locale": "value5",\
     "device_id": "value6"\
   }\
-]\
+]
 - create Postgres database
 - create table in the database according this defenition: 
 
@@ -22,8 +22,7 @@ CREATE TABLE IF NOT EXISTS user_logins(\
     masked_device_id    varchar(256),\
     locale              varchar(32),\
     app_version         varchar(32),\
-    create_date         date\
-);\
+    create_date         date);
 
 #### To run the app execute the following commands: 
 - pip install -r requirements.txt
