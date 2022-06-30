@@ -25,6 +25,7 @@ CREATE TABLE IF NOT EXISTS user_logins(\
     create_date         date);
 
 #### To run the app execute the following commands: 
+- tested im Python 3.9.12
 - pip install -r requirements.txt
 - set up app parameters in params.yaml
 - sh run_app.sh 
