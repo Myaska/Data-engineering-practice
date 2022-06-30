@@ -1,0 +1,5 @@
+'sqs_url' : 'http://localhost:4566/000000000000/login-queue'
+'table_name' : 'user_logins'
+'dbname' : 'postgres'
+'user_name' : 'postgres'
+'password' : 'postgres'
