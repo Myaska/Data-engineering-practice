@@ -2,9 +2,9 @@
 #### Before run this app you should create: 
 - AWS SQS Queue
 - send message in the following JSON compatible format:
-[
-  {
-    "user_id": "value1",
+[\n
+  {\n
+    "user_id": "value1", \n
     "app_version": "value2",
     "device_type": "value3",
     "ip": "value4",
