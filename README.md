@@ -1,4 +1,4 @@
-### App for 'data-engineering-practice'
+### Data engineering with AWS
 #### Before run this app you should create: 
 - AWS SQS Queue
 - send message in the following JSON compatible format:\
